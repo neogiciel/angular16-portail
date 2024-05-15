@@ -17,9 +17,11 @@ Utilisation du WebCompoent disponible sous :<br>
   Intégré directement <br>
   <script src= "assets/build.js"></script>
 
-package.json
-"build": {
-"scripts": ["./src/assets/build.js"]
+ou
+  
+  package.json
+  "build": {
+  "scripts": ["./src/assets/build.js"]
 
 }
 ```

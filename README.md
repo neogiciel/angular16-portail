@@ -12,6 +12,13 @@ Mise en place d'un portail en Angular 16, permettant d intégrer un Web Comppone
 Utilisation du WebCompoent disponible sous :<br>
 **assets/build.js**
 
+Modifier le fichier app.module.ts
+```
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+schemas: [CUSTOM_ELEMENTS_SCHEMA],
+```
+Puis
 ```
  Fichier index.html
   Intégré directement <br>
@@ -47,7 +54,13 @@ Le service est accessible sur http://localhost:4200
 
 ## FAQs
 ***
-**Aucune**<br>
+Quelques lignes de commandes utiles<br>
+```
+Désinstaller la version courante
+npm uninstall -g @angular/cli
 
+Installer la version
+npm install -g @angular/cli@16.2.14
 
+```
 

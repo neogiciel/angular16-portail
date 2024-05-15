@@ -9,42 +9,28 @@
 ## Informations Générales
 ***
 Mise en place d'un portail en Angular 16, permettant d intégrer un Web Compponent indépendent
-Utilisation du WebCompoent disponible sous :
-#assets/build.js
-
+Utilisation du WebCompoent disponible sous :<br>
+**assets/build.js**
 
 ```
- @Bean
-    public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
+ Fichier index.html
+  Intégré directement <br>
+  <script src= "assets/build.js"></script>
 
-        logger.info("[Service GW Springboot] SpringCloudConfig : gatewayRoutes");
+package.json
+"build": {
+"scripts": ["./src/assets/build.js"]
 
-        return builder.routes()
-                .route(r -> r.path("/security")
-                        .uri("http://dev2.neogiciel.com"))
-
-                .build();
-    }
+}
 ```
-
-
+Pour pouvoir ensuite intégrer le selecteur dans la page que vous souhaitez il vous faudras simplement
+```
+<news-component></news-component>
+```
 ## Technologies
 ***
 Technologies utilisées:
 * Angular JS 16
-```
- @Bean
-    public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
-
-        logger.info("[Service GW Springboot] SpringCloudConfig : gatewayRoutes");
-
-        return builder.routes()
-                .route(r -> r.path("/security")
-                        .uri("http://dev2.neogiciel.com"))
-
-                .build();
-    }
-```
 
   
 ## Instalation

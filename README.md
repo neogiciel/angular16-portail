@@ -8,12 +8,12 @@
 
 ## Informations Générales
 ***
-Mise en place d'une application Angular JS utilisant la sécurité Oauth2
+Mise en place d'un portail en Angular 16, permettant d intégrer un Web Compponent indépendent
 
 ## Technologies
 ***
 Technologies utilisées:
-* Angular JS 15
+* Angular JS 16
   
 ## Instalation
 ***
